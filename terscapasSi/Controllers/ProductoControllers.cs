@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using terscapasSi.Model.Entities;
-using terscapasSi.Services;
+using terscapasSi.Model.Services;
 
 namespace terscapasSi.Controllers
 {

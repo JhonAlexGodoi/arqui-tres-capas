@@ -46,38 +46,43 @@
             // 
             // nudId
             // 
-            nudId.Location = new Point(172, 78);
+            nudId.Location = new Point(150, 58);
+            nudId.Margin = new Padding(3, 2, 3, 2);
             nudId.Name = "nudId";
-            nudId.Size = new Size(150, 27);
+            nudId.Size = new Size(131, 23);
             nudId.TabIndex = 0;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(172, 130);
+            txtNombre.Location = new Point(150, 98);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(260, 27);
+            txtNombre.Size = new Size(228, 23);
             txtNombre.TabIndex = 1;
             // 
             // textEmail
             // 
-            textEmail.Location = new Point(172, 179);
+            textEmail.Location = new Point(150, 134);
+            textEmail.Margin = new Padding(3, 2, 3, 2);
             textEmail.Name = "textEmail";
-            textEmail.Size = new Size(260, 27);
+            textEmail.Size = new Size(228, 23);
             textEmail.TabIndex = 2;
             // 
             // textPassword
             // 
-            textPassword.Location = new Point(172, 228);
+            textPassword.Location = new Point(150, 171);
+            textPassword.Margin = new Padding(3, 2, 3, 2);
             textPassword.Name = "textPassword";
-            textPassword.Size = new Size(260, 27);
+            textPassword.Size = new Size(228, 23);
             textPassword.TabIndex = 3;
             // 
             // checkActivo
             // 
             checkActivo.AutoSize = true;
-            checkActivo.Location = new Point(173, 277);
+            checkActivo.Location = new Point(151, 208);
+            checkActivo.Margin = new Padding(3, 2, 3, 2);
             checkActivo.Name = "checkActivo";
-            checkActivo.Size = new Size(73, 24);
+            checkActivo.Size = new Size(60, 19);
             checkActivo.TabIndex = 4;
             checkActivo.Text = "Activo";
             checkActivo.UseVisualStyleBackColor = true;
@@ -85,80 +90,85 @@
             // lblId
             // 
             lblId.AutoSize = true;
-            lblId.Location = new Point(59, 85);
+            lblId.Location = new Point(52, 64);
             lblId.Name = "lblId";
-            lblId.Size = new Size(82, 20);
+            lblId.Size = new Size(65, 15);
             lblId.TabIndex = 5;
             lblId.Text = "Numero ID";
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(59, 137);
+            lblNombre.Location = new Point(52, 103);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(64, 20);
+            lblNombre.Size = new Size(51, 15);
             lblNombre.TabIndex = 6;
             lblNombre.Text = "Nombre";
             // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(59, 186);
+            lblEmail.Location = new Point(52, 140);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(46, 20);
+            lblEmail.Size = new Size(36, 15);
             lblEmail.TabIndex = 7;
             lblEmail.Text = "Email";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(59, 231);
+            lblPassword.Location = new Point(52, 173);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(70, 20);
+            lblPassword.Size = new Size(57, 15);
             lblPassword.TabIndex = 8;
             lblPassword.Text = "Password";
             // 
             // btnCrear
             // 
-            btnCrear.Location = new Point(33, 340);
+            btnCrear.Location = new Point(29, 255);
+            btnCrear.Margin = new Padding(3, 2, 3, 2);
             btnCrear.Name = "btnCrear";
-            btnCrear.Size = new Size(134, 53);
+            btnCrear.Size = new Size(117, 40);
             btnCrear.TabIndex = 9;
             btnCrear.Text = "Crear";
             btnCrear.UseVisualStyleBackColor = true;
+            btnCrear.Click += btnCrear_Click;
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(188, 340);
+            btnBuscar.Location = new Point(164, 255);
+            btnBuscar.Margin = new Padding(3, 2, 3, 2);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(134, 53);
+            btnBuscar.Size = new Size(117, 40);
             btnBuscar.TabIndex = 10;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(343, 340);
+            btnActualizar.Location = new Point(300, 255);
+            btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(134, 53);
+            btnActualizar.Size = new Size(117, 40);
             btnActualizar.TabIndex = 11;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(188, 430);
+            btnEliminar.Location = new Point(164, 322);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(134, 53);
+            btnEliminar.Size = new Size(117, 40);
             btnEliminar.TabIndex = 12;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             // 
             // UserForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(584, 653);
+            ClientSize = new Size(511, 490);
             Controls.Add(btnEliminar);
             Controls.Add(btnActualizar);
             Controls.Add(btnBuscar);
@@ -172,6 +182,7 @@
             Controls.Add(textEmail);
             Controls.Add(txtNombre);
             Controls.Add(nudId);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UserForm";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)nudId).EndInit();

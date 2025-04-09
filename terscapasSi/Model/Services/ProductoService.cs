@@ -5,14 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using terscapasSi.Model.Entities;
 
-namespace terscapasSi.Services
+namespace terscapasSi.Model.Services
 {
     internal class ProductoService
     {
         //simula la tabla de producto de BBDD
         private List<Producto> tablaProducto = new List<Producto>();
-
-
 
         //metodo para agregar o crear producto
         public bool CrearProducto(Producto nuevoProducto)
@@ -58,7 +56,7 @@ namespace terscapasSi.Services
                     producto.Precio = productoActualizado.Precio;
                     producto.Categoria = productoActualizado.Categoria;
                     producto.Stock = productoActualizado.Stock;
-                    return true; 
+                    return true;
                     //true indica que de actualizo correctamente 
 
                 }
@@ -96,6 +94,6 @@ namespace terscapasSi.Services
         }
     }
 
-        
-    
+
+
 }

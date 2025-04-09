@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using terscapasSi.Model.Entities;
 
-namespace terscapasSi.Services
+namespace terscapasSi.Model.Services
 {
     internal class CategoriaService
     {
@@ -20,8 +20,8 @@ namespace terscapasSi.Services
             {
                 tablaCategorias.Add(nuevaCategoria); //agrega la nueva categoria
                 return true; // exito
-
-            }catch
+            }
+            catch
             {
                 return false; // en caos de error 
             }
@@ -36,7 +36,7 @@ namespace terscapasSi.Services
         //metodo ob categoria por ID
         public Categoria ObtenerPorID(int id)
         {
-            return tablaCategorias.Find(c => c.Id == id); 
+            return tablaCategorias.Find(c => c.Id == id);
             //busca categoria por id
         }
         //*************************************
@@ -58,7 +58,8 @@ namespace terscapasSi.Services
                 return false; // no encuentra categoria 
 
 
-            } catch
+            }
+            catch
             {
                 return false; //error durante 
             }
@@ -72,15 +73,16 @@ namespace terscapasSi.Services
             try
             {
                 var categoria = ObtenerPorID(id); // bjusca actegoria 
-                if(categoria != null)
+                if (categoria != null)
                 {
                     tablaCategorias.Remove(categoria); //elimina categoria
-                    return true; 
+                    return true;
 
                 }
                 return false; // cat no encontrada
 
-            } catch
+            }
+            catch
             {
                 return false; //cat no encontrada
             }

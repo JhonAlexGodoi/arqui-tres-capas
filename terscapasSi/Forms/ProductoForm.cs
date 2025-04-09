@@ -21,5 +21,10 @@ namespace terscapasSi.UI
         {
 
         }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

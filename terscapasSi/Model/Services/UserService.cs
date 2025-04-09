@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using terscapasSi.Model.Entities;
+﻿using terscapasSi.Model.Entities;
 
 
-namespace terscapasSi.Services
+namespace terscapasSi.Model.Services
 {
     internal class UserService
     {
@@ -22,10 +17,11 @@ namespace terscapasSi.Services
             try
             {
                 tablaUsuarios.Add(nuevoUsuario); //agregar nuevo usuaroio a la list
-                return true; 
+                return true;
 
 
-            } catch
+            }
+            catch
             {
                 return false;
             }
@@ -62,7 +58,7 @@ namespace terscapasSi.Services
                     usuario.Activo = usuarioActualizado.Activo;
                 }
                 return true;
-            } 
+            }
             catch
             {
                 return false;
