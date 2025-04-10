@@ -21,6 +21,5 @@ namespace terscapasSi.Model.Context
         public DbSet<Categoria> Categoria { get; set; }
         public DbSet<Producto> Producto { get; set; }
         public DbSet<User> User { get; set; }
-
     }
 }
